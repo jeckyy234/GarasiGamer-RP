@@ -115,42 +115,7 @@ Templating	Laravel Blade
 Autentikasi	Laravel Session + Middleware custom (AdminMiddleware)
 AJAX	jQuery.get() untuk mengambil unit tersedia
 Realtime Timer	JavaScript setInterval dengan perhitungan selisih waktu
-📂 Struktur Kode Penting
-text
-garasigamer/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── Auth/LoginController.php
-│   │   │   ├── Auth/RegisterController.php
-│   │   │   ├── DashboardController.php
-│   │   │   ├── PsTypeController.php
-│   │   │   ├── GameController.php
-│   │   │   ├── RentalController.php
-│   │   └── Middleware/AdminMiddleware.php
-│   ├── Models/
-│   │   ├── User.php
-│   │   ├── PsType.php
-│   │   ├── Game.php
-│   │   └── Rental.php
-├── database/
-│   ├── migrations/
-│   │   ├── ..._create_users_table.php (bawaan)
-│   │   ├── ..._add_is_admin_to_users_table.php
-│   │   ├── ..._create_ps_types_table.php
-│   │   ├── ..._create_games_table.php
-│   │   ├── ..._create_rentals_table.php
-│   │   └── ..._add_unit_number_to_rentals_table.php
-│   └── seeders/DatabaseSeeder.php
-├── resources/views/
-│   ├── layouts/app.blade.php (sidebar tersembunyi)
-│   ├── dashboard.blade.php
-│   ├── ps_types/index.blade.php
-│   ├── games/index.blade.php
-│   ├── rentals/create.blade.php
-│   └── rentals/history.blade.php
-├── routes/web.php
-└── .env
+
 🔄 Alur Transaksi Rental (Lengkap)
 Admin login.
 
