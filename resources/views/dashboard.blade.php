@@ -15,7 +15,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach($ps->units_status as $unit)
-            <div class="border rounded-lg p-3 {{ $unit['available'] ? 'bg-green-50 border-green-300' : 'bg-red-50 border-red-300' }}">
+            <div class="border rounded-lg p-3 {{ $unit['available'] ? 'bg-green-50 border-green-300' : 'bg-black-50 border-black
+            -300' }}">
                 <div class="font-bold text-lg">Unit {{ $unit['number'] }}</div>
 
                 @if($unit['available'])
@@ -23,7 +24,7 @@
                     <i class="fas fa-check-circle"></i> Tersedia
                 </div>
                 @else
-                <div class="text-red-600 text-sm">
+                <div class="text-yellow-600 text-sm">
                     <i class="fas fa-user"></i> {{ $unit['rental']['customer'] }}
                 </div>
                 <div class="text-sm mt-1">
